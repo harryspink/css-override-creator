@@ -33,7 +33,7 @@ foreach($file_1_parsed->getAllRuleSets() as $oRuleSet) {
     $rules = [];
 
     foreach($oRuleSet->getRulesAssoc() as $value){
-        $rules[(string)$value->getRule()] = (string)$value->getValue();
+        $rules[(string)$value->getRule()] = (string)$value->getValue() . ($value->getIsImportant() ? ' !important' : '');
     }
 
     $selectors = [];
@@ -48,7 +48,7 @@ foreach($file_2_parsed->getAllRuleSets() as $oRuleSet) {
     $rules = [];
 
     foreach($oRuleSet->getRulesAssoc() as $value){
-        $rules[(string)$value->getRule()] = (string)$value->getValue();
+        $rules[(string)$value->getRule()] = (string)$value->getValue() . ($value->getIsImportant() ? ' !important' : '');
     }
 
     $selectors = [];
