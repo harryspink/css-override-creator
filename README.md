@@ -78,12 +78,12 @@ Input two CSS files and then output a single override stylesheet
 
 Usage - it takes three input options
 
- 1. main css file path
+ 1. default css file path
  2. override css file path
  3. output css file path
 
 ### Example
 
-    php parse.php css/main.css css/override.css css/output.css
+    php parse.php css/default.css css/override.css css/output.css
 
 
