@@ -41,7 +41,11 @@ foreach($file_1_parsed->getAllRuleSets() as $oRuleSet) {
         $selectors[] = (string)$selector;
     }
 
-    $file_1_selectors[implode(', ', $selectors)] = $rules;
+    if(!isset($file_1_selectors[implode(', ', $selectors)])){
+        $file_1_selectors[implode(', ', $selectors)] = [];
+    }
+
+    $file_1_selectors[implode(', ', $selectors)] = array_merge($file_1_selectors[implode(', ', $selectors)], $rules);
 }
 
 foreach($file_2_parsed->getAllRuleSets() as $oRuleSet) {
@@ -56,7 +60,11 @@ foreach($file_2_parsed->getAllRuleSets() as $oRuleSet) {
         $selectors[] = (string)$selector;
     }
 
-    $file_2_selectors[implode(', ', $selectors)] = $rules;
+    if(!isset($file_2_selectors[implode(', ', $selectors)])){
+        $file_2_selectors[implode(', ', $selectors)] = [];
+    }
+
+    $file_2_selectors[implode(', ', $selectors)] = array_merge($file_2_selectors[implode(', ', $selectors)], $rules);
 }
 
 $to_add = [];
@@ -64,10 +72,6 @@ foreach($file_2_selectors as $selector => $values){
     $add = false;
 
     if(!isset($file_1_selectors[$selector])){
-        $add = true;
-    }
-
-    if(count($values) != count($values)){
         $add = true;
     }
 

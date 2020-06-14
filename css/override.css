@@ -1,7 +1,17 @@
 .style-1, .style-2, .style-3 {
-  color: #007bff;
-  font-size: 1.2em;
+  color: red;
+  font-size: 1.1em;
   font-weight: bold;
+}
+
+.style-1, .style-2, .style-3 {
+  width: 110px;
+  font-weight: normal;
+}
+
+.style-1, .style-2, .style-3 {
+  background-color: red;
+  font-size: 1.6em;
 }
 
 .style-3, .style-4 {

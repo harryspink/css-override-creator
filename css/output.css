@@ -1,3 +1,8 @@
+.style-1, .style-2, .style-3 {
+  color: red;
+  font-size: 1.6em;
+  width: 110px;
+}
 .style-3, .style-4 {
   background-color: #c6c6c6 !important;
 }

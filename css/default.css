@@ -4,6 +4,16 @@
   font-weight: bold;
 }
 
+.style-1, .style-2, .style-3 {
+    width: 250px;
+    font-weight: normal;
+}
+
+.style-1, .style-2, .style-3 {
+    background-color: red;
+    font-size: 1.3em;
+}
+
 .style-3, .style-4 {
   background-color: #dc3545;
 }
