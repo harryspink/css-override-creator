@@ -1,0 +1,23 @@
+.style-1, .style-2, .style-3 {
+  color: #007bff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.style-3, .style-4 {
+  background-color: #c6c6c6;
+}
+
+.style-5 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: orange;
+}
+
+.style-6, .style-7{
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 5px;
+  text-decoration-skip-ink: none;
+}
